@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>catalog</title>
+</head>
+
+<body>
+  <header class="page‐header">
+    <div class="page‐header__logo">
+      <img src="" alt="Мишка">
+    </div>
+    <div class="mine-nav__wr">
+      <nav class="mine-nav mine-nav--open">
+        <span class="mine-nav__toggler"></span>
+        <ul class="mine-nav__list">
+          <li class="mine-nav__item"><a href="">Каталог товаров</a></li>
+          <li class="mine-nav__item"><a href="">Вязание на заказ</a></li>
+          <li class="mine-nav__item"><span class="search__img"></span><a href="">Поиск по сайту</a></li>
+          <li class="mine-nav__item"><span class="basket__img"></span><a href="">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="promo‐header">
+      <div class="promo-header__wr">
+        <h1 class="promo-header__title">Вязание на заказ</h1>
+      </div>
+    </div>
+  </header>
+  <main class="page-main">
+    <div class="page-main__descr">
+      <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали</p>
+    </div>
+    <div class="order-block">
+      <form method="get" class="order-block__form">
+        <fieldset class="order-block__item">
+          <legend>Тип</legend>
+          <input type="radio" id="accessory" name="product-groups" checked>
+          <label for="accessory">Аксессуар для  интерьера</label>
+          <input type="radio" id="toy" name="product-groups">
+          <label for="toy">Детская игрушка</label>
+        </fieldset>
+        <fieldset class="order-block__item">
+          <legend>Цвет</legend>
+          <input type="checkbox" id="white" name="product-groups" checked>
+          <label for="white">Белый</label>
+          <input type="checkbox" id="gray" name="product-groups" checked>
+          <label for="gray">Серый</label>
+          <input type="checkbox" id="tiffany" name="product-groups">
+          <label for="tiffany">«Тиффани»</label>
+          <input type="checkbox" id="black" name="product-groups">
+          <label for="black">Черный</label>
+          <input type="checkbox" id="pink" name="product-groups">
+          <label for="pink">Розовый</label>
+          <input type="checkbox" id="orange" name="product-groups">
+          <label for="orange">Розовый</label>
+        </fieldset>
+        <fieldset class="order-block__item">
+          <legend>Фио</legend>
+          <label for="name">Имя:</label>
+          <input class="form-text" type="text" id="name" name="message" placeholder="Введите ваше имя*" autofocus>
+          <label for="surname">Фамилия:</label>
+          <input class="form-text" type="text" id="surname" name="message" placeholder="Укажите фамилию*">
+          <label for="patronymic">Отчество:</label>
+          <input class="form-text" type="text" id="patronymic" name="message" placeholder="Отчество, если желаете">
+        </fieldset>
+        <fieldset class="order-block__item">
+          <legend>тел</legend>
+          <input class="form-text form-text--tell" type="tel">
+        </fieldset>
+        <fieldset class="order-block__item">
+          <legend>E-mail</legend>
+          <input class="form-text form-text--mail" type="email">
+        </fieldset>
+        <fieldset class="order-block__item">
+          <legend>Доп</legend>
+          <textarea name="text" id="text" placeholder="Опишите все ваши  пожелания к заказу"></textarea>
+        </fieldset>
+      </form>
+      <div class="order-block__text">
+        <p>*Поля обязательны для заполнения</p>
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="footer__wr">
+      <a href="" class="btn btn__order">Отправить заказ</a>
+      <span class="social‐links">
+        <a class="social‐link social‐link‐‐in" href="">Мы в Инстаграме</a>
+        <a class="social‐link social‐link‐‐fb" href="">Мы в Фейсбуке</a>
+        <a class="social‐link social‐link‐‐vk" href="">Мы в Вконтакте</a>
+      </span>
+      <div class="footer__copyright">
+        <span class="copyright__text">Разработано</span>
+        <span class="copyright__img copyright__img--academy"></span>
+      </div>
+    </div>
+  </footer>
