@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -11,32 +12,32 @@
     <div class="page‐header__logo">
       <img src="" alt="Мишка">
     </div>
-    <div class="mine-nav__wr">
-      <nav class="mine-nav mine-nav--open">
+    <nav class="mine-nav mine-nav--open">
+      <div class="mine-nav__wr">
         <span class="mine-nav__toggler"></span>
         <ul class="mine-nav__list">
           <li class="mine-nav__item"><a href="">Каталог товаров</a></li>
           <li class="mine-nav__item"><a href="">Вязание на заказ</a></li>
           <li class="mine-nav__item mine-nav__item--search"><a href="">Поиск по сайту</a></li>
-          <li class="mine-nav__item mine-nav__item--basket"><a href="">Корзина: пока пуста</a></li>
+          <li class="mine-nav__item mine-nav__item--basket mine-nav__item--last"><a href="">Корзина: пока пуста</a></li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </nav>
     <div class="promo‐header promo‐header--bg">
       <div class="promo-header__wr">
         <h1 class="promo-header__title">Милые штуки ручной работы для дома</h1>
       </div>
     </div>
     <div class="catalog-list">
-      <a href="" class="catalog-list__item">
-        <span class="catalog__item-text">Предметы  интерьера</span>
-        <span class="catalog__item-interior"></span>
-      </a>
-      <a href="" class="catalog-list__item">
-        <span class="catalog__item-text">Детские  игрушки</span>
-        <span class="catalog__item-toy"></span>
-      </a>
-    </div>
+        <a href="" class="catalog-list__item">
+          <span class="catalog__item-text">Предметы  интерьера</span>
+          <span class="catalog__item-interior"></span>
+        </a>
+        <a href="" class="catalog-list__item catalog-list__item--color">
+          <span class="catalog__item-text">Детские  игрушки</span>
+          <span class="catalog__item-toy"></span>
+        </a>
+      </div>
   </header>
   <main class="page-main">
     <section class="product">
@@ -53,7 +54,7 @@
             <span class="product__coll">Диаметр:</span>
             <span class="product__coll">25 см</span>
           </div>
-          <div class="product__row">
+          <div class="product__row product__row--last">
             <span class="product__coll">Высота:</span>
             <span class="product__coll">15 см</span>
           </div>
@@ -138,7 +139,7 @@
         </div>
       </div>
     </section>
-    <section class="map">
+    <section class="map map--bg">
 
     </section>
   </main>
@@ -160,7 +161,7 @@
   </footer>
   <section class="popap">
     <div class="popap__wr">
-      <h2 class="popap__title">Добавить  в корзину</h2>
+      <h2 class="popap__title">Добавить в корзину</h2>
       <div class="choice">
         <h5 class="choice__title">Выберите размер:</h5>
         <div class="choice__click">
