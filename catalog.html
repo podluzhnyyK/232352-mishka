@@ -9,26 +9,37 @@
 
 <body>
   <header class="page‐header">
-    <div class="page‐header__logo">
-      <a href="index.html"><img src="" alt="Мишка"></a>
-    </div>
-    <div class="mine-nav__wr">
-      <nav class="mine-nav mine-nav--open">
-        <span class="mine-nav__toggler"></span>
-        <ul class="mine-nav__list">
-          <li class="mine-nav__item"><a href="">Каталог товаров</a></li>
-          <li class="mine-nav__item"><a href="">Вязание на заказ</a></li>
-          <li class="mine-nav__item mine-nav__item--search"><a href="">Поиск по сайту</a></li>
-          <li class="mine-nav__item mine-nav__item--basket"><a href="">Корзина: пока пуста</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="promo‐header">
-      <div class="promo-header__wr">
-        <h1 class="promo-header__title">Каталог товаров</h1>
+    <div class="page‐header__wr">
+      <div class="page‐header__logo">
+        <img src="" alt="Мишка">
       </div>
+      <button class="page-header__toggle">Открыть меню</button>
+      <nav class="main-nav main-nav--closed">
+        <div class="main-nav__wr">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="">Каталог товаров</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="">Вязание на заказ</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="">Новые поступления</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="">Распродажа</a></li>
+          </ul>
+        </div>
+      </nav>
+      <ul class="search-basket main-nav--closed">
+        <li class="search-basket__item">
+          <a class="search-basket__link search-basket__link--search" href="#">Поиск по сайту</a>
+        </li>
+        <li class="search-basket__item">
+          <a class="search-basket__link search-basket__link--basket" href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+      <div class="page-header__delivery">Бесплатная доставка по России</div>
     </div>
   </header>
+  <div class="promo‐header">
+    <div class="promo-header__wr">
+      <h1 class="promo-header__title">Каталог товаров</h1>
+    </div>
+  </div>
   <main class="page-main">
     <section class="catalog">
       <div class="catalog__wr">
@@ -36,53 +47,78 @@
           <div class="catalog__img">
             <img src="img/photo-1-mobile@1x.jpg" alt="">
           </div>
-          <h3 class="catalog__name">Зайчик-попрыгайчик</h3>
-          <p class="catalog__characteristic">Рост 30 см, вес 200 г</p>
-          <div class="catalog__price">
-            <span class="catalog-price">1 200 руб.</span>
-            <a class="catalog-basket" href=""></a>
+          <div class="catalog__box">
+            <div class="catalog__text">
+              <h3 class="catalog__name">Зайчик-попрыгайчик</h3>
+              <p class="catalog__characteristic">Рост 30 см, вес 200 г</p>
+            </div>
+            <div class="catalog__price">
+              <span class="catalog-price">1 200 руб.</span>
+              <a class="catalog-basket" href=""></a>
+            </div>
           </div>
         </article>
         <article class="catalog__item">
           <div class="catalog__img">
             <img src="img/photo-2-mobile@1x.jpg" alt="">
           </div>
-          <h3 class="catalog__name">Корзинка для белья</h3>
-          <p class="catalog__characteristic">Диаметр 15 см, высота 10 см</p>
-          <div class="catalog__price">
-            <span class="catalog-price">690 руб.</span>
-            <a class="catalog-basket" href=""></a>
+          <div class="catalog__box">
+            <div class="catalog__text">
+              <h3 class="catalog__name">Корзинка для белья</h3>
+              <p class="catalog__characteristic">Диаметр 15 см, высота 10 см</p>
+            </div>
+            <div class="catalog__price">
+              <span class="catalog-price">690 руб.</span>
+              <a class="catalog-basket" href=""></a>
+            </div>
           </div>
         </article>
         <article class="catalog__item">
           <div class="catalog__img">
             <img src="img/photo-3-mobile@1x.jpg" alt="">
           </div>
-          <h3 class="catalog__name">Большая корзинка для игрушек</h3>
-          <p class="catalog__characteristic">Диаметр 30 см, высота 30 см</p>
-          <div class="catalog__price">
-            <span class="catalog-price">1 500 руб.</span>
-            <a class="catalog-basket" href=""></a>
+          <div class="catalog__box">
+            <div class="catalog__text">
+              <h3 class="catalog__name">Большая корзинка для игрушек</h3>
+              <p class="catalog__characteristic">Диаметр 30 см, высота 30 см</p>
+            </div>
+            <div class="catalog__price">
+              <span class="catalog-price">1 500 руб.</span>
+              <a class="catalog-basket" href=""></a>
+            </div>
           </div>
         </article>
       </div>
     </section>
     <section class="video-block">
-      <header class="video-block__header">
-        <div class="video-block__img">
-          <img src="" alt="">
+      <div class="video-block__wr">
+        <header class="video-block__header">
+          <div class="video-block__img">
+            <img src="" alt="">
+          </div>
+          <h3 class="video-block__title">Процесс производства</h3>
+        </header>
+        <div class="video-block__video">
+          <img src="img/video-mobile@1x.jpg" alt="">
         </div>
-        <h3 class="video-block__title">Процесс производства</h3>
-      </header>
-      <video class="video-block__video"></video>
-      <div class="video-block__text">
-        <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <div class="video-block__text">
+          <header class="video-block__header video-block__header--show">
+            <div class="video-block__img">
+              <img src="" alt="">
+            </div>
+            <h3 class="video-block__title">Процесс производства</h3>
+          </header>
+          <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a href="" class="btn btn__order">Сделать заказ</a>
+        </div>
       </div>
     </section>
   </main>
   <footer class="page-footer">
     <div class="footer__wr">
-      <a href="" class="btn btn__order">Сделать заказ</a>
+      <div class="page‐footer__logo">
+        <img src="" alt="Мишка">
+      </div>
       <span class="social‐links">
         <a class="social‐link social‐link‐‐in" href="">Мы в Инстаграме</a>
         <a class="social‐link social‐link‐‐fb" href="">Мы в Фейсбуке</a>
@@ -96,3 +132,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

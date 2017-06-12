@@ -3,5 +3,26 @@
 }
 
 .page-main__descr{
-  padding: 0 30px;
+  .wr__padding();
+  p{
+    max-width: 720px;
+    font-size: 17px;
+    line-height: 30px;
+    color: #444;
+  }
+}
+
+@media @tablet-widths {
+  .page-main__descr {
+    .wr__padding(0 50px);
+  }
+}
+
+@media @desktop-widths {
+  .page-main__descr {
+    .wr__padding(0 100px);
+    p{
+      max-width: 670px;
+    }
+  }
 }
