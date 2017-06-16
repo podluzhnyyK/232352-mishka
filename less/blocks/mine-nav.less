@@ -1,24 +1,126 @@
-.mine-nav__list {
-  list-style: none;
-  padding: 0;
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
-
-.mine-nav__wr {
-  padding: 0 30px;
-}
-
-.mine-nav__item {
-  margin-bottom: 62px;
-  a {
-    color: #000;
-    text-decoration: none;
-    font-size: 17px;
-    line-height: 24px;
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 15px;
   }
-}
 
-.mine-nav__item--last {
-  margin-bottom: 0;
-}
+  .main-nav__wr {
+    padding-left: 0;
+  }
+
+  .main-nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .main-nav__item:nth-child(n+3) {
+    display: none;
+  }
+
+  .main-nav__item {
+    border-bottom: 1px solid #cecece;
+  }
+
+  .main-nav__list:first-child {
+    border-top: 1px solid #cecece;
+  }
+
+  .main-nav__link {
+    position: relative;
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 26px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    &:hover {
+      opacity: .6;
+    }
+    &:active {
+      opacity: .3;
+    }
+  }
+
+  .main-nav--closed {
+    display: none;
+  }
+
+  .main-nav--opened {
+    display: block;
+  }
+
+  @media @mobile-widths-only {
+    .main-nav__link {
+      text-align: center;
+    }
+  }
+
+  @media @tablet-widths {
+    .main-nav {
+      position: absolute;
+      top: 100%;
+      left: 50px;
+      z-index: 10;
+      margin-top: 18px;
+      padding-top: 0;
+    }
+    .main-nav--closed {
+      display: block;
+    }
+    .main-nav__list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .main-nav__list:first-child {
+      border: none;
+    }
+    .main-nav__item {
+      margin-right: 35px;
+      border: none;
+    }
+    .main-nav__link {
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 0;
+      line-height: 1.714;
+    }
+  }
+
+  @media @desktop-widths {
+    .main-nav {
+      position: static;
+      order: 1;
+      width: 450px;
+      height: 88px;
+      margin-top: 0;
+    }
+    .main-nav__item {
+      display: flex;
+      align-items: center;
+      width: 50%;
+      margin-right: 0;
+    }
+    .main-nav__item:nth-child(1)::after {
+      content: "";
+      width: 1px;
+      height: 90px;
+      margin-left: 36px;
+      background: #ececec;
+    }
+    .main-nav__item:nth-child(n+3) {
+      display: block;
+      margin-top: 18px;
+      font-size: 10px;
+    }
+    .main-nav__item:nth-child(1),
+    .main-nav__item:nth-child(2) {
+      height: 88px;
+      margin-top: 0;
+    }
+  }
