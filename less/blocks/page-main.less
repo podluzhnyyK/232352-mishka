@@ -1,28 +1,30 @@
-.page-main {
-  padding-top: 32px;
-}
-
-.page-main__descr{
+.page-main__descr {
   .wr__padding();
-  p{
+  p {
     max-width: 720px;
-    font-size: 17px;
-    line-height: 30px;
+    font-size: 13px;
+    line-height: 24px;
     color: #444;
+    margin-bottom: 24px;
   }
 }
 
 @media @tablet-widths {
   .page-main__descr {
     .wr__padding(0 50px);
+    p {
+      font-size: 17px;
+      line-height: 30px;
+    }
   }
 }
 
 @media @desktop-widths {
   .page-main__descr {
     .wr__padding(0 100px);
-    p{
-      max-width: 670px;
+    padding-left: 250px;
+    p {
+      max-width: 675px;
     }
   }
 }

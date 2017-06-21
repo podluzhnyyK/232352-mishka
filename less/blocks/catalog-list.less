@@ -1,35 +1,41 @@
-
 .catalog-list__wr {
   display: flex;
   flex-direction: column;
 }
 
 .catalog-list__item {
-  padding: 30px;
+  padding: 26px 28px 29px;
   text-decoration: none;
   background-color: #63d1bb;
   flex-grow: 1;
+  &--color {
+    background-color: #56c3b2;
+  }
 }
 
-.catalog-list__item--color {
-  background-color: #56c3b2;
-}
-
-.catalog__item-text {
+.catalog-list__item-text {
   color: #fff;
   font-size: 19px;
   line-height: 24px;
   display: inline-block;
   width: 130px;
-  font-weight: 700;
   vertical-align: top;
+  font-family: "Opensans bold", sans-serif;
 }
 
 @media @tablet-widths {
   .catalog-list__wr {
-    .wr__padding(@padding: 0 50px;);
+    .wr__padding(@padding: 0 50px;
+    );
     display: flex;
     flex-direction: row;
+  }
+  .catalog-list__item {
+    padding: 26px 35px 29px;
+  }
+  .catalog-list__item-text {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

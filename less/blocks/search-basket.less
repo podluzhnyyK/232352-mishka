@@ -7,6 +7,14 @@
   }
 }
 
+.search-basket--closed {
+  display: none;
+}
+
+.search-basket--opened {
+  display: block;
+}
+
 .search-basket__item {
   border-bottom: 1px solid #cecece;
 }
@@ -39,10 +47,10 @@
 }
 
 @media @mobile-widths-only {
-    .search-basket__link {
-      text-align: center;
-    }
+  .search-basket__link {
+    text-align: center;
   }
+}
 
 @media @tablet-widths {
   .search-basket {
@@ -53,6 +61,9 @@
   }
   .search-basket__item {
     border: none;
+  }
+  .search-basket--closed {
+    display: flex;
   }
   .search-basket__link {
     height: 30px;

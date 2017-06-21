@@ -2,17 +2,19 @@
   padding-bottom: 39px;
 }
 
-.contacts__wr-item {}
-
 .contacts__title {
   margin-bottom: 29px;
+  font-family: "Opensans bold", sans-serif;
+}
+
+.contacts__wr-item {
+  padding: 0 30px;
 }
 
 .contacts__email {
   display: flex;
   justify-content: space-between;
   margin-bottom: 28px;
-  line-height: 2.143;
 }
 
 .contacts__email-wr {
@@ -39,7 +41,8 @@
 .contacts__address-item {
   width: 182px;
   margin: 0;
-  line-height: 2;
+  line-height: 30px;
+  font-size: 15px;
 }
 
 .contacts__write-us {
@@ -49,7 +52,7 @@
   padding-left: 0;
 }
 
-.contacts__wrap-btn {
+.contacts__wr-btn {
   display: none;
 }
 
@@ -71,7 +74,9 @@
   }
   .contacts__title {
     position: relative;
-    margin-bottom: 51px;
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 46px;
     &::after,
     &::before {
       content: "";
@@ -93,7 +98,7 @@
     margin-bottom: 0;
   }
   .contacts__name {
-    margin-right: 30px;
+    margin-right: 26px;
     vertical-align: top;
   }
   .contacts__email-wr {
@@ -115,7 +120,7 @@
     padding: 17px 44px 19px 42px;
   }
   .contacts__map {
-    margin-bottom: 44px;
+    margin-bottom: 52px;
     background: #cecece url("../img/map-tablet.jpg") no-repeat;
   }
 }
@@ -139,45 +144,36 @@
   .contacts__title {
     margin-bottom: 50px;
     padding-top: 66px;
-    font-size: 50px;
+    font-size: 53px;
+    line-height: 57px;
   }
-
-
-.contacts__info {
-  display: block;
-  margin-bottom: 80px;
-}
-
-.contacts__name {
-  margin-right: 25px;
-}
-
-.contacts__email {
-  width: auto;
-  margin-bottom: 22px;
-}
-
-.contacts__address {
-  width: auto;
-}
-
-.contacts__address-item {
-  width: 210px;
-  line-height: 1.9;
-}
-
-.contacts__write-us {
-  display: none;
-}
-
-.contacts__wr-btn {
-  display: block;
-  width: 230px;
-}
-
-.contacts__map {
-  width: 525px;
-}
-
-
+  .contacts__info {
+    display: block;
+    margin-bottom: 80px;
+  }
+  .contacts__name {
+    margin-right: 25px;
+  }
+  .contacts__email {
+    width: auto;
+    margin-bottom: 32px;
+  }
+  .contacts__address {
+    width: auto;
+  }
+  .contacts__address-item {
+    width: 230px;
+    letter-spacing: 1px;
+  }
+  .contacts__write-us {
+    display: none;
+  }
+  .contacts__wr-btn {
+    display: block;
+    width: 230px;
+  }
+  .contacts__map {
+    width: 525px;
+    margin-top: 39px;
+  }
 }
