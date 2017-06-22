@@ -6,12 +6,12 @@ navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('main-nav--closed')) {
     navMain.classList.remove('main-nav--closed');
     navMain.classList.add('main-nav--opened');
-    searchBasket.classList.remove('main-nav--closed');
-    searchBasket.classList.add('main-nav--opened');
+    searchBasket.classList.remove('search-basket--closed');
+    searchBasket.classList.add('search-basket--opened');
   } else {
     navMain.classList.add('main-nav--closed');
     navMain.classList.remove('main-nav--opened');
-    searchBasket.classList.add('main-nav--closed');
-    searchBasket.classList.remove('main-nav--opened')
+    searchBasket.classList.add('search-basket--closed');
+    searchBasket.classList.remove('search-basket--opened')
   }
 });
