@@ -39,6 +39,7 @@
 }
 
 .order-block__wr {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -121,10 +122,13 @@ input[type="checkbox"]+label:hover::before {
 input[type="checkbox"]:checked+label::after {
   content: "";
   position: absolute;
-  width: 27px;
-  height: 23px;
-  left: 0px;
-  top: 0px;
+  top: 50%;
+  left: 9px;
+  width: 22px;
+  height: 17px;
+  background: url(../img/icon-tick.svg) no-repeat;
+  background-size: contain;
+  transform: translateY(-50%);
 }
 
 .order-block__info {
@@ -140,6 +144,13 @@ input[type="checkbox"]:checked+label::after {
   flex-grow: 1;
   font-size: 17px;
   line-height: 18px;
+}
+
+.form__input-img {
+  position: absolute;
+  top: 16px;
+  right: 4px;
+  color: #ccc;
 }
 
 .order-block__text {

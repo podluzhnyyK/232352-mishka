@@ -37,6 +37,29 @@
   }
 }
 
+.video-block__video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 101px;
+  height: 77px;
+  background: url(../img/icon-play.svg) no-repeat;
+  border: none;
+  outline: none;
+  transform: translate(-50%, -50%);
+  &:hover {
+    width: 121px;
+    height: 92px;
+    background-size: 100%;
+  }
+  &:active {
+    width: 81px;
+    height: 62px;
+    background-size: 100%;
+    opacity: .3;
+  }
+}
+
 .btn__order {
   width: 188px;
   margin: 0 auto;
@@ -50,6 +73,7 @@
     order: 2;
   }
   .video-block__video {
+    position: relative;
     order: 1;
     width: 668px;
     height: 455px;
@@ -75,6 +99,7 @@
     display: none;
     &--show {
       display: flex;
+      flex-direction: column;
       margin-bottom: 14px;
     }
   }
