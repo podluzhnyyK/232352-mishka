@@ -2,6 +2,7 @@
   .wr__padding();
   display: flex;
   flex-direction: column;
+  margin-bottom: 55px;
 }
 
 .order-block__item {
@@ -34,7 +35,7 @@
     color: #000;
     font-size: 17px;
     line-height: 18px;
-    font-family: "Opensans bold", sans-serif;
+    font-weight: bold;
   }
 }
 
@@ -44,12 +45,12 @@
   flex-direction: column;
 }
 
-input[type="radio"] {
+.order-block input[type="radio"] {
   display: none;
 }
 
-input[type="radio"]+label {
-  font-family: "Opensans bold", sans-serif;
+.order-block input[type="radio"]+label {
+  font-weight: bold;
   display: block;
   margin: 26px 0px 0px 0px;
   padding-left: 62px;
@@ -58,11 +59,11 @@ input[type="radio"]+label {
   cursor: pointer;
 }
 
-input[type="radio"]+label:last-child {
+.order-block input[type="radio"]+label:last-child {
   margin-bottom: 25px;
 }
 
-input[type="radio"]+label::before {
+.order-block input[type="radio"]+label::before {
   content: "";
   position: absolute;
   display: block;
@@ -74,11 +75,11 @@ input[type="radio"]+label::before {
   border: 3px solid #444;
 }
 
-input[type="radio"]+label:hover::before {
+.order-block input[type="radio"]+label:hover::before {
   border: 3px solid #62d1ba;
 }
 
-input[type="radio"]:checked+label::after {
+.order-block input[type="radio"]:checked+label::after {
   content: "";
   position: absolute;
   display: block;
@@ -90,12 +91,16 @@ input[type="radio"]:checked+label::after {
   background: #62d1ba;
 }
 
-input[type="checkbox"] {
+.order-block input[type="radio"]+label:active::before {
+  border-color: rgba(68, 68, 68, .3);
+}
+
+.order-block input[type="checkbox"] {
   display: none;
 }
 
-input[type="checkbox"]+label {
-  font-family: "Opensans bold", sans-serif;
+.order-block input[type="checkbox"]+label {
+  font-weight: bold;
   display: block;
   margin-top: 27px;
   padding-left: 60px;
@@ -104,7 +109,7 @@ input[type="checkbox"]+label {
   cursor: pointer;
 }
 
-input[type="checkbox"]+label::before {
+.order-block input[type="checkbox"]+label::before {
   content: "";
   position: absolute;
   display: block;
@@ -115,20 +120,24 @@ input[type="checkbox"]+label::before {
   border: 2px solid #444;
 }
 
-input[type="checkbox"]+label:hover::before {
+.order-block input[type="checkbox"]+label:hover::before {
   border: 2px solid #62d1ba;
 }
 
-input[type="checkbox"]:checked+label::after {
+.order-block input[type="checkbox"]:checked+label::after {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 9px;
-  width: 22px;
-  height: 17px;
-  background: url(../img/icon-tick.svg) no-repeat;
+  top: 10px;
+  left: 7px;
+  width: 24px;
+  height: 19px;
+  background: url("../img/icon-tick.svg") no-repeat;
   background-size: contain;
   transform: translateY(-50%);
+}
+
+.order-block input[type="checkbox"]+label:active::before {
+  border-color: rgba(68, 68, 68, .3);
 }
 
 .order-block__info {
@@ -146,11 +155,27 @@ input[type="checkbox"]:checked+label::after {
   line-height: 18px;
 }
 
+.form-text:hover {
+  border-bottom: 2px solid #62d1ba;
+}
+
+.form-text:focus {
+  border-bottom: 2px solid #62d1ba;
+}
+
 .form__input-img {
   position: absolute;
-  top: 16px;
-  right: 4px;
+  top: 12px;
+  right: 22px;
   color: #ccc;
+}
+
+.order-block__wr:hover .form__input-img {
+  color: #62d1ba;
+}
+
+.form-text:focus+.form__input-img {
+  color: #62d1ba;
 }
 
 .order-block__text {
@@ -174,9 +199,22 @@ input[type="checkbox"]:checked+label::after {
   line-height: 18px;
 }
 
+.order-block__textarea:hover {
+  border: 2px solid #62d1ba;
+}
+
+.order-block__textarea:focus {
+  border: 2px solid #62d1ba;
+}
+
+.order-block__btn{
+  background-color: #fff;
+}
+
 @media @tablet-widths {
   .order-block {
     .wr__padding(0 50px);
+    margin-bottom: 110px;
   }
   .order-block__item {
     margin-bottom: 48px;
@@ -197,6 +235,7 @@ input[type="checkbox"]:checked+label::after {
     &--row {
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: space-between;
     }
   }
   .order-block__info {
@@ -208,33 +247,39 @@ input[type="checkbox"]:checked+label::after {
       margin-right: 25px;
     }
   }
-  input[type="radio"]+label {
+  .order-block input[type="radio"]+label {
     margin: 27px 0px 32px 0px;
     padding-left: 81px;
     font-size: 19px;
     line-height: 18px;
   }
-  input[type="checkbox"]+label {
-    width: 150px;
+  .order-block input[type="checkbox"]+label {
+    width: 158px;
     padding-left: 81px;
     margin-bottom: 31px;
   }
-  input[type="radio"]+label::before {
+  .order-block input[type="radio"]+label::before {
     width: 47px;
     height: 47px;
     left: -1px;
     top: -16px;
   }
-  input[type="radio"]:checked+label::after {
+  .order-block input[type="radio"]:checked+label::after {
     width: 20px;
     height: 20px;
     left: 16px;
     top: 1px;
   }
-  input[type="checkbox"]+label::before {
+  .order-block input[type="checkbox"]+label::before {
     top: -15px;
     width: 50px;
     height: 48px;
+  }
+  .order-block input[type="checkbox"]:checked+label::after {
+    top: 12px;
+    left: 12px;
+    width: 35px;
+    height: 22px;
   }
   .order-block__item legend {
     position: relative;
@@ -256,7 +301,7 @@ input[type="checkbox"]:checked+label::after {
   .order-block__textarea {
     font-size: 19px;
   }
-  .btn__order-form {
+  .order-block__btn{
     width: 226px;
   }
 }
@@ -266,25 +311,32 @@ input[type="checkbox"]:checked+label::after {
     .wr__padding(0 100px);
   }
   .order-block__item {
-    padding-left: 40px;
+    padding-left: 15px;
     &--margin {
-      padding-right: 150px;
+      padding-right: 125px;
     }
     &--min-margin {
       margin-bottom: 35px;
-      padding-right: 150px;
+      padding-right: 125px;
     }
   }
   .order-block__wr {
     margin-left: 110px;
+    &--row {
+      justify-content: flex-start;
+    }
   }
-  input[type="checkbox"]+label {
+  .form__input-img {
+    top: 11px;
+    right: 5px;
+  }
+  .order-block input[type="checkbox"]+label {
     width: 182px;
   }
   .order-block__info {
-    padding-right: 150px;
+    padding-right: 125px;
   }
   .order-block__text {
-    padding: 0 150px;
+    padding: 0 125px;
   }
 }

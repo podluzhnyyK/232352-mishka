@@ -23,13 +23,24 @@
   width: 100%;
   padding-right: 0;
   padding-left: 0;
+  padding-bottom: 17px;
 }
 
 .page-header__toggle {
   position: absolute;
+  font-size: 0;
   top: 10px;
   right: 0;
+  width: 21px;
+  height: 20px;
   margin-right: 30px;
+  background: url(../img/icon-menu-open.svg) no-repeat;
+  border: none;
+  outline: none;
+}
+
+.page-header__toggle--opened {
+  background: url(../img/icon-menu-close.svg) no-repeat;
 }
 
 .page-header__delivery {
@@ -37,11 +48,17 @@
 }
 
 @media @tablet-widths {
-  .page-header {
+  .page‐header {
     padding-top: 0;
   }
   .page‐header__logo {
     padding-top: 8px;
+    &:hover {
+      opacity: .6;
+    }
+    &:active {
+      opacity: .3;
+    }
   }
   .page‐header__wr {
     position: relative;
@@ -51,7 +68,7 @@
     justify-content: space-between;
     align-items: center;
     width: 668px;
-    height: 88px;
+    height: 71px;
     margin: 0 auto;
     padding-top: 0;
     padding-right: 50px;
@@ -67,6 +84,8 @@
     z-index: 100;
     display: block;
     margin-top: 18px;
+    font-size: 15px;
+    line-height: 24px;
   }
 }
 
@@ -77,6 +96,7 @@
   .page‐header__logo {
     order: 2;
     padding-left: 0;
+    padding-top: 0;
   }
   .page‐header__wr {
     width: 1050px;

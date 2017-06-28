@@ -1,6 +1,6 @@
 .about-us {
   padding-top: 70px;
-  margin-bottom: 60px;
+  margin-bottom: 57px;
 }
 
 .about-us__wr {
@@ -8,12 +8,27 @@
 }
 
 .about-us__item {
-  width: 231px;
+  width: 197px;
   margin-bottom: 25px;
+  &--price {
+    width: 200px;
+  }
+  &--handmade {
+    width: 217px;
+  }
+  &--support {
+    width: 255px;
+  }
+  &--packaging {
+    width: 205px;
+  }
 }
 
 .about-us__img {
   color: #63d1bb;
+  margin-bottom: 11px;
+  padding-top: 6px;
+  padding-left: 5px;
 }
 
 .about-us__item:last-child {
@@ -25,30 +40,73 @@
   margin-bottom: 25px;
   font-size: 25px;
   line-height: 30px;
-  font-family: "Opensans bold", sans-serif;
+  font-weight: bold;
 }
 
 .about-us__text {
   font-size: 17px;
   line-height: 20px;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 @media @tablet-widths {
+  .about-us {
+    padding-top: 0;
+    margin-bottom: 0px;
+  }
   .about-us__wr {
     .wr__padding(0 50px);
+    padding-top: 58px;
   }
   .about-us__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 600px;
+    max-width: 645px;
     align-content: flex-start;
+    justify-content: space-between;
   }
   .about-us__title {
     margin-right: 50px;
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 43px;
+  }
+  .about-us__item {
+    margin-bottom: 54px;
+    width: 215px;
+    &--ecology {
+      order: 1;
+    }
+    &--price {
+      order: 3;
+      width: 235px;
+    }
+    &--liks {
+      order: 5;
+    }
+    &--handmade {
+      order: 2;
+      width: 298px;
+      padding-right: 13px;
+      margin-bottom: 55px;
+    }
+    &--support {
+      order: 4;
+      width: 310px;
+    }
+    &--packaging {
+      order: 6;
+      width: 291px;
+      padding-right: 19px;
+    }
+  }
+  .about-us__text {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .page-footer__copyright {
+    padding-top: 0;
   }
 }
 

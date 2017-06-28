@@ -24,7 +24,6 @@
   display: block;
   padding-top: 25px;
   padding-bottom: 26px;
-  padding-left: 76px;
   font-size: 16px;
   vertical-align: middle;
   text-align: left;
@@ -45,6 +44,12 @@
   left: 30px;
   color: #d3d2d2;
   transform: translateY(-50%);
+  &:hover{
+    color: #63d1bb;
+  }
+  &:active{
+    opacity: .3;
+  }
 }
 
 @media @mobile-widths-only {
@@ -67,10 +72,12 @@
     display: flex;
   }
   .search-basket__link {
-    height: 30px;
+    font-size: 17px;
+    line-height: 17px;
+    height: 20px;
     padding-top: 36px;
     padding-bottom: 33px;
-    line-height: 1.5;
+    padding-left: 81px;
     border-right: 1px solid #ececec;
     border-left: 1px solid #ececec;
   }

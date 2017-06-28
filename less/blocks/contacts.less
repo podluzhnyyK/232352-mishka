@@ -4,7 +4,9 @@
 
 .contacts__title {
   margin-bottom: 29px;
-  font-family: "Opensans bold", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .contacts__wr-item {
@@ -14,7 +16,7 @@
 .contacts__email {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
 }
 
 .contacts__email-wr {
@@ -22,6 +24,8 @@
 }
 
 .contacts__link {
+  font-size: 15px;
+  line-height: 30px;
   border-bottom: 1px solid #62d1ba;
   &:hover {
     color: #62d1ba;
@@ -34,7 +38,7 @@
 .contacts__address {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 38px;
+  margin-bottom: 37px;
   line-height: 2.143;
 }
 
@@ -60,23 +64,23 @@
   width: 100%;
   padding-right: 0;
   padding-left: 0;
-}
-
-.contacts__map {
-  height: 458px;
-  margin-bottom: 36px;
+  height: 457px;
+  margin-bottom: 39px;
   background: #cecece url("../img/map-mobile.jpg") no-repeat;
 }
 
 @media @tablet-widths {
   .contacts {
-    padding-bottom: 53px;
+    padding-bottom: 115px;
+  }
+  .contacts__wr-item {
+    padding: 0 50px;
   }
   .contacts__title {
     position: relative;
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 46px;
+    margin-bottom: 48px;
     &::after,
     &::before {
       content: "";
@@ -85,12 +89,12 @@
       right: 3px;
       width: 47px;
       height: 81px;
-      background: url(../img/icon-flag.svg) no-repeat;
+      background: url("../img/icon-flag.svg") no-repeat;
     }
   }
   .contacts__info {
     display: flex;
-    margin-bottom: 60px;
+    margin-bottom: 58px;
   }
   .contacts__email {
     display: block;
@@ -103,8 +107,13 @@
     vertical-align: top;
   }
   .contacts__email-wr {
+    width: 205px;
     display: inline-block;
     vertical-align: middle;
+  }
+  .contacts__link {
+    font-size: 17px;
+    line-height: 30px;
   }
   .contacts__address {
     display: block;
@@ -113,15 +122,18 @@
   }
   .contacts__address-item {
     display: inline-block;
-    width: 210px;
+    width: 225px;
     vertical-align: top;
+    line-height: 30px;
+    font-size: 17px;
   }
   .contacts__write-us {
-    width: 140px;
-    padding: 17px 44px 19px 42px;
+    width: 186px;
+    padding: 14px 20px 14px 20px;
+    font-size: 17px;
   }
   .contacts__map {
-    margin-bottom: 52px;
+    margin-bottom: 55px;
     background: #cecece url("../img/map-tablet.jpg") no-repeat;
   }
 }

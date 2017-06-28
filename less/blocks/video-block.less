@@ -1,3 +1,7 @@
+.video-block {
+  margin-bottom: 58px;
+}
+
 .video-block__wr {
   .wr__padding();
   display: flex;
@@ -6,19 +10,36 @@
 
 .video-block__header {
   order: 1;
+  display: flex;
   &--show {
     display: none;
   }
+}
+
+.video-block__img {
+  width: 67px;
+  padding-top: 31px;
+  padding-left: 34px;
+  color: #63d1bb;
+}
+
+.video-block__title {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  padding-top: 7px;
 }
 
 .video-block__video {
   order: 2;
   width: 260px;
   height: 150px;
+  position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   &--preview {
-    background-image: url(../img/video-mobile@1x.jpg);
+    background-image: url("../img/video-mobile@1x.jpg");
   }
 }
 
@@ -43,7 +64,7 @@
   left: 50%;
   width: 101px;
   height: 77px;
-  background: url(../img/icon-play.svg) no-repeat;
+  background: url("../img/icon-play.svg") no-repeat;
   border: none;
   outline: none;
   transform: translate(-50%, -50%);
@@ -66,11 +87,23 @@
 }
 
 @media @tablet-widths {
+  .video-block {
+    margin-bottom: 121px;
+  }
   .video-block__wr {
     .wr__padding(0 50px);
   }
   .video-block__header {
     order: 2;
+  }
+  .video-block__title {
+    font-size: 20px;
+    padding-top: 17px;
+    margin-bottom: 0px;
+  }
+  video-block__img {
+    padding-top: 33px;
+    padding-left: 42px;
   }
   .video-block__video {
     position: relative;
@@ -78,15 +111,16 @@
     width: 668px;
     height: 455px;
     &--preview {
-      background-image: url(../img/video-tablet.jpg);
+      background-image: url("../img/video-tablet@1x.jpg");
     }
   }
   .video-block__text {
+    padding-bottom: 45px;
     p {
       font-size: 15px;
       line-height: 30px;
       max-width: 588px;
-      margin-bottom: 38px;
+      margin-bottom: 32px;
     }
   }
   .btn__order {
@@ -95,6 +129,9 @@
 }
 
 @media @desktop-widths {
+  .video-block {
+    margin-bottom: 167px;
+  }
   .video-block__header {
     display: none;
     &--show {
@@ -111,11 +148,11 @@
     width: 682px;
     height: 455px;
     &--preview {
-      background-image: url(../img/video-desktop.jpg);
+      background-image: url("../img/video-desktop@1x.jpg");
     }
   }
   .video-block__text {
-    padding-top: 77px;
+    padding-top: 17px;
     padding-left: 77px;
     p {
       max-width: 230px;
@@ -124,5 +161,15 @@
   }
   .btn__order {
     width: 230px;
+  }
+  .video-block__img {
+    padding-top: 29px;
+    padding-left: 2px;
+  }
+  .video-block__title {
+    padding: 0;
+    margin-top: 16px;
+    width: 165px;
+    margin-bottom: 20px;
   }
 }

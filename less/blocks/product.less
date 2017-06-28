@@ -36,8 +36,7 @@
   color: #444;
   font-size: 15px;
   line-height: 24px;
-  margin-bottom: 27px;
-  bottom: 30px;
+  margin-bottom: 13px;
   order: 3;
 }
 
@@ -52,6 +51,10 @@
   order: 4;
 }
 
+.product__box {
+  margin-bottom: 26px;
+}
+
 .product__row {
   &:last-child {
     margin-bottom: 0;
@@ -63,19 +66,14 @@
 }
 
 .product__coll {
-  padding-bottom: 10px;
-  padding-right: 33px;
-  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 31px;
+  padding-top: 10px;
 }
 
 .product__img {
-  min-height: 360px;
+  min-height: 339px;
   order: 5;
-  &--basket {
-    background-image: url(../img/triple-set-mobile.jpg);
-    background-repeat: no-repeat;
-    background-position: center 21px;
-  }
 }
 
 .product__price {
@@ -94,43 +92,45 @@
     color: #444;
     font-size: 17px;
     line-height: 24px;
-    font-family: "Opensans bold", sans-serif;
+    font-weight: bold;
   }
 }
 
 @media @tablet-widths {
+  .product {
+    padding-top: 43px;
+  }
   .product-wr {
     .wr__padding(0 50px);
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
   }
+  .product__box {
+    margin-right: 34px;
+  }
   .product__title {
     font-size: 43px;
     line-height: 50px;
-    font-family: "Opensans bold", sans-serif;
+    font-weight: bold;
   }
   .product__week {
     line-height: 17px;
     width: 125px;
     text-align: center;
     margin-bottom: 0;
-    font-family: "Opensans bold", sans-serif;
+    font-weight: bold;
   }
   .product__text {
     padding-top: 28px;
     font-size: 17px;
     line-height: 30px;
-    max-width: 332px;
+    max-width: 300px;
     margin-bottom: 33px;
   }
   .product__img {
-    width: 50%;
-    min-height: 458px;
-    &--basket {
-      background-image: url(../img/triple-set-tablet.jpg);
-      background-position: center 54px;
-    }
+    position: relative;
+    top: 54px;
   }
   .product__header {
     display: flex;
@@ -139,7 +139,7 @@
   }
   .product__footer {
     position: relative;
-    top: -113px;
+    top: -62px;
   }
   .product__price {
     margin-bottom: 34px;
@@ -154,6 +154,9 @@
 }
 
 @media @desktop-widths {
+  .product {
+    padding-top: 122px;
+  }
   .product-wr {
     .wr__padding(0 100px);
   }
@@ -175,20 +178,16 @@
   }
   .product__box {
     padding-left: 175px;
-    margin-right: 18px;
+    margin-right: 50px;
   }
   .product__footer {
     left: 176px;
+    position: relative;
+    top: -229px;
   }
   .product__img {
-    width: 50%;
-    min-height: 523px;
     position: relative;
-    top: -28px;
+    top: -113px;
     z-index: -1;
-    &--basket {
-      background-image: url(../img/triple-set-desktop.jpg);
-      background-position: center -87px;
-    }
   }
 }
