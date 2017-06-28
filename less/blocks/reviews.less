@@ -1,5 +1,16 @@
 .reviews {
   margin-bottom: 86px;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: url(../img/bg-zigzag-line.svg) repeat-x center;
+    background-size: contain;
+  }
 }
 
 .reviews__wr {
@@ -86,6 +97,10 @@
 @media @tablet-widths {
   .reviews {
     margin-bottom: 114px;
+    &:before {
+      bottom: -53px;
+      height: 16px;
+    }
   }
   .reviews__wr {
     .wr__padding(0 50px);
@@ -134,23 +149,35 @@
 @media @retina-tablet {
   .reviews--bg {
     background-image: url("../img/review@2x.jpg");
+    background-size: 350px 457px;
   }
 }
 
 @media @desktop-widths {
+  .reviews {
+    position: relative;
+    top: -34px;
+    margin-bottom: -16px;
+    &:before {
+      height: 27px;
+      left: 48px;
+      width: 91%;
+      background: url(../img/bg-zigzag-line.svg) repeat-x center;
+    }
+  }
   .reviews__wr {
-    .wr__padding(0 100px);
-    padding-left: 271px;
+    .wr__padding(0 50px);
+    padding-left: 226px;
     padding-top: 70px;
     padding-bottom: 99px;
   }
   .reviews__title {
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 31px;
+    margin-bottom: 27px;
   }
   .reviews__item {
-    margin-bottom: 6px;
+    margin-bottom: 11px;
   }
   .reviews__text {
     max-width: 780px;
@@ -158,7 +185,7 @@
   }
   .reviews--bg {
     background-repeat: no-repeat;
-    background-position: 100px 0;
+    background-position: 50px 0;
   }
   .reviews__btn {
     margin-top: 8px;

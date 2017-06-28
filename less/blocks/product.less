@@ -1,5 +1,16 @@
 .product {
   padding-top: 28px;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -41px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: url(../img/bg-zigzag-line.svg) repeat-x center;
+    background-size: contain;
+  }
 }
 
 .product-wr {
@@ -99,6 +110,10 @@
 @media @tablet-widths {
   .product {
     padding-top: 43px;
+    &:before {
+      bottom: -7px;
+      height: 16px;
+    }
   }
   .product-wr {
     .wr__padding(0 50px);
@@ -156,9 +171,13 @@
 @media @desktop-widths {
   .product {
     padding-top: 122px;
-  }
-  .product-wr {
-    .wr__padding(0 100px);
+    &:before {
+      height: 27px;
+      left: 48px;
+      bottom: 130px;
+      width: 91%;
+      background: url(../img/bg-zigzag-line.svg) repeat-x center;
+    }
   }
   .product__title {
     font-size: 53px;

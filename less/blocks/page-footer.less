@@ -1,10 +1,15 @@
+.page-footer {
+  background-color: #f1f1f1;
+  padding-bottom: 18px;
+}
+
 .page-footer__wr {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.page‐footer__logo {
+.page-footer__logo {
   color: #000;
   &:hover {
     color: #63d1bb;
@@ -16,7 +21,7 @@
 
 .page-footer__copyright {
   display: flex;
-  padding-top: 20px;
+  padding-top: 21px;
 }
 
 .page-footer__copyright-text {
@@ -27,7 +32,7 @@
   padding-top: 4px;
 }
 
-.page-foote__copyright-img a {
+.page-footer__copyright-img a {
   color: #63d1bb;
   &:active {
     opacity: .3;
@@ -35,16 +40,24 @@
 }
 
 @media @mobile-widths-only {
-  .page‐footer__logo {
+  .page-footer__logo {
     display: none;
   }
 }
 
 @media @tablet-widths {
+  .page-footer {
+    padding-top: 56px;
+    padding-bottom: 32px;
+  }
   .page-footer__wr {
     .wr__padding(0 50px);
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+  }
+  .page-footer__logo-img {
+    position: relative;
+    top: -10px;
   }
 }
