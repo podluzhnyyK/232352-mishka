@@ -1,20 +1,30 @@
 .promo‐header {
-  min-height: 304px;
+  min-height: 282px;
   &--bg {
-    background-image: url(../img/hero-mobile.jpg);
+    background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center 0;
   }
   &--catalog {
-    min-height: 229px;
+    min-height: 206px;
   }
   &--form {
-    min-height: 207px;
+    min-height: 185px;
+  }
+}
+
+@media @retina-mobile {
+  .promo‐header {
+    &--bg {
+      background-image: url("../img/hero-mobile@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: center 0;
+    }
   }
 }
 
 .promo-header__title {
-  font-family: "Opensans bold", sans-serif;
+  font-weight: bold;
   color: #000;
   font-size: 27px;
   line-height: 30px;
@@ -25,32 +35,51 @@
 
 .promo-header__wr {
   .wr__padding(0 24px);
-  padding-top: 92px;
+  padding-top: 70px;
 }
 
 @media @tablet-widths {
+  .catalog {
+    padding-top: 91px;
+  }
   .promo‐header {
-    min-height: 604px;
+    min-height: 626px;
     &--bg {
-      background-image: url(../img/hero-desktop.jpg);
-      background-position: center -23px;
+      background-image: url("../img/hero-desktop@1x.jpg");
+      background-position: center -1px;
     }
     &--catalog {
-      min-height: 340px;
+      min-height: 213px;
     }
     &--form {
-      min-height: 317px;
+      min-height: 250px;
+      margin-bottom: 46px;
+    }
+  }
+  @media @retina-tablet {
+    .promo‐header {
+      min-height: 626px;
+      &--bg {
+        background-image: url("../img/hero-desktop@2x.jpg");
+        background-position: center -1px;
+      }
     }
   }
   .promo-header__wr {
     .wr__padding(0 50px);
-    padding-top: 120px;
+    padding-top: 142px;
+    &--catalog {
+      padding-top: 84px;
+    }
+    &--form {
+      padding-top: 82px;
+    }
   }
   .promo-header__title {
     font-size: 43px;
     line-height: 50px;
     width: 575px;
-    font-family: "Opensans bold";
+    font-weight: bold;
     padding-top: 10px;
   }
 }
@@ -58,15 +87,22 @@
 @media @desktop-widths {
   .promo‐header {
     &--catalog {
-      min-height: 418px;
+      min-height: 236px;
     }
     &--form {
-      min-height: 393px;
+      min-height: 250px;
+      margin-bottom: 124px;
     }
   }
   .promo-header__wr {
     .wr__padding(0 100px);
-    padding-top: 120px;
+    padding-top: 144px;
+    &--catalog {
+      padding-top: 84px;
+    }
+    &--form {
+      padding-top: 84px;
+    }
   }
   .promo-header__title {
     font-size: 53px;

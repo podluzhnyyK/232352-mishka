@@ -100,21 +100,21 @@
         <picture>
           <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+          <img src="img/logo-mobile.svg" alt="Мишка">
         </picture>
       </div>
       <button class="page-header__toggle">Открыть меню</button>
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav">
         <div class="main-nav__wr">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--border"><a class="main-nav__link" href="">Каталог товаров</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="">Вязание на заказ</a></li>
+            <li class="main-nav__item main-nav__item--border"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
             <li class="main-nav__item main-nav__item--hidden"><a class="main-nav__link" href="">Новые поступления</a></li>
             <li class="main-nav__item main-nav__item--hidden"><a class="main-nav__link" href="">Распродажа</a></li>
           </ul>
         </div>
       </nav>
-      <ul class="search-basket search-basket--closed">
+      <ul class="search-basket">
         <li class="search-basket__item">
           <a class="search-basket__link search-basket__link--search" href="#">
             <svg class="search-basket__item-img" width="18" height="18">
@@ -166,7 +166,7 @@
           <h3 class="product__week">Товар недели</h3>
         </header>
         <div class="product__box">
-          <p class="product__text">Экологически чистая пряжа,<br> ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <p class="product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
           <div class="product__description">
             <table>
               <tr class="product__row">
@@ -184,6 +184,13 @@
             </table>
           </div>
         </div>
+        <div class="product__img">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+          </picture>
+        </div>
         <div class="product__footer">
           <div class="product__price">
             <span>Цена: 990 руб.</span>
@@ -196,48 +203,48 @@
       <div class="about-us__wr">
         <h2 class="about-us__title">Коротко о нас:</h2>
         <div class="about-us__list">
-          <div class="about-us__item">
-            <div class="about-us__img about-us__img--ecology">
+          <div class="about-us__item about-us__item--ecology">
+            <div class="about-us__img">
               <svg class="advantages__item-img" width="32" height="37">
                 <use xlink:href="#icon-feature-1"></use>
               </svg>
             </div>
             <span class="about-us__text">Экологически  чистые материалы</span>
           </div>
-          <div class="about-us__item">
-            <div class="about-us__img about-us__img--price">
+          <div class="about-us__item about-us__item--price">
+            <div class="about-us__img">
               <svg class="advantages__item-img" width="47" height="27">
                 <use xlink:href="#icon-feature-3"></use>
               </svg>
             </div>
             <span class="about-us__text">Скандинавский стиль  по российской цене</span>
           </div>
-          <div class="about-us__item">
-            <div class="about-us__img about-us__img--liks">
+          <div class="about-us__item about-us__item--liks">
+            <div class="about-us__img">
               <svg class="advantages__item-img" width="33" height="28">
                 <use xlink:href="#icon-feature-5"></use>
               </svg>
             </div>
             <span class="about-us__text">Увеличивает лайки на фотографиях</span>
           </div>
-          <div class="about-us__item">
-            <div class="about-us__img about-us__img--handmade">
+          <div class="about-us__item about-us__item--handmade">
+            <div class="about-us__img">
               <svg class="advantages__item-img" width="34" height="34">
                 <use xlink:href="#icon-feature-2"></use>
               </svg>
             </div>
             <span class="about-us__text">Связано вручную с  любовью и умилением</span>
           </div>
-          <div class="about-us__item">
-            <div class="about-us__img about-us__img--support">
+          <div class="about-us__item about-us__item--support">
+            <div class="about-us__img">
               <svg class="advantages__item-img" width="54" height="23">
                 <use xlink:href="#icon-feature-4"></use>
               </svg>
             </div>
             <span class="about-us__text">Поддержка отечественного производителя</span>
           </div>
-          <div class="about-us__item">
-            <div class="about-us__img about-us__img--packaging">
+          <div class="about-us__item about-us__item--packaging">
+            <div class="about-us__img">
               <svg class="advantages__item-img" width="33" height="32">
                 <use xlink:href="#icon-feature-6"></use>
               </svg>
@@ -279,20 +286,21 @@
               <span class="contacts__name">адрес:</span>
               <p class="contacts__address-item">
                 г. Санкт-Петербург,
-                <br> ул. Большая Конюшенная, д. 19/8, офис 101
+                <br> ул. Большая Конюшенная,<br> д. 19/8, офис 101
               </p>
             </div>
           </div>
           <a class="btn contacts__wr-btn" href="#">Напишите нам</a>
         </div>
         <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.32089461580403!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1498601313261" width="100%" height="457" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <a class="btn contacts__write-us" href="#">Напишите нам</a>
       </div>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="footer__wr">
+    <div class="page-footer__wr">
       <div class="page‐footer__logo">
         <svg class="page-footer__logo-img" width="86" height="35">
           <use xlink:href="#logo-mobile"></use>
@@ -312,30 +320,31 @@
           </svg>
         </a>
       </span>
-      <div class="footer__copyright">
-        <span class="copyright__text">Разработано</span>
-        <div class="copyright__img copyright__img--academy">
-          <svg class="page-footer__copyright-img" width="27" height="34">
-            <use xlink:href="#icon-logo"></use>
-          </svg>
+      <div class="page-footer__copyright">
+        <span class="page-footer__copyright-text">Разработано</span>
+        <div class="page-foote__copyright-img page-foote__copyright-img--academy">
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <svg width="27" height="34">
+              <use xlink:href="#icon-logo"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
   </footer>
-  <section class="popap">
-    <div class="popap__wr">
-      <h2 class="popap__title">Добавить в корзину</h2>
-      <div class="choice">
-        <h5 class="choice__title">Выберите размер:</h5>
-        <div class="choice__click">
-          <span class="choice__item choice__item--active">s</span>
-          <span class="choice__item">m</span>
-          <span class="choice__item">l</span>
-        </div>
-      </div>
-      <a href="" class="btn btn__add">Добавить</a>
-    </div>
-  </section>
+  <div class="modal">
+    <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+    <p class="modal__desc">Выберите размер:</p>
+    <form class="modal__size-list" action="https://echo.htmlacademy.ru" method="post">
+      <input type="radio" name="size" id="size-s" checked>
+      <label class="modal__size-item" for="size-s">S</label>
+      <input type="radio" name="size" id="size-m">
+      <label class="modal__size-item" for="size-m">M</label>
+      <input type="radio" name="size" id="size-l">
+      <label class="modal__size-item" for="size-l">L</label>
+    </form>
+    <button class="btn modal__btn" type="submit">Добавить</button>
+  </div>
   <script src="js/script.js"></script>
 </body>
 

@@ -1,5 +1,5 @@
 .reviews {
-  margin-bottom: 65px;
+  margin-bottom: 86px;
 }
 
 .reviews__wr {
@@ -15,7 +15,7 @@
   line-height: 30px;
   flex-grow: 1;
   order: 1;
-  font-family: "Opensans bold", sans-serif;
+  font-weight: bold;
 }
 
 .reviews__item {
@@ -27,15 +27,19 @@
 }
 
 .reviews__text {
-  max-width: 245px;
+  max-width: 257px;
+  margin: 22px 0;
+  margin-bottom: 12px;
 }
 
 .reviews__user {
+  margin-bottom: 34px;
   flex-grow: 1;
   order: 3;
 }
 
 .reviews__switch {
+  margin-bottom: 39px;
   order: 4;
   display: flex;
 }
@@ -46,8 +50,9 @@
 }
 
 .reviews__name {
-  font-family: "Opensans bold", sans-serif;
+  font-weight: bold;
   letter-spacing: 1px;
+  margin-bottom: 7px;
 }
 
 .reviews__mail {
@@ -63,11 +68,11 @@
 }
 
 .reviews__arrow--prev {
-  background: url(../img/icon-left-arrow.svg) no-repeat center;
+  background: url("../img/icon-left-arrow.svg") no-repeat center;
 }
 
 .reviews__arrow--next {
-  background: url(../img/icon-right-arrow.svg) no-repeat center;
+  background: url("../img/icon-right-arrow.svg") no-repeat center;
 }
 
 .reviews__arrow:hover {
@@ -79,23 +84,31 @@
 }
 
 @media @tablet-widths {
+  .reviews {
+    margin-bottom: 114px;
+  }
   .reviews__wr {
     .wr__padding(0 50px);
-    padding-top: 90px;
-    padding-bottom: 63px;
+    padding-top: 107px;
+    padding-bottom: 47px;
     flex-direction: row;
     flex-wrap: wrap;
   }
   .reviews__user {
-    flex-grow: 1;
+    margin-bottom: 34px;
   }
   .reviews__title {
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 35px;
+    margin-bottom: 27px;
+  }
+  .reviews__switch {
+    margin-bottom: 0;
+    margin-top: 19px;
   }
   .reviews__item {
-    margin-bottom: 27px;
+    margin-bottom: 31px;
+    font-size: 17px;
   }
   .reviews__text {
     max-width: 668px;
@@ -108,13 +121,19 @@
     width: 171px;
   }
   .reviews--bg {
-    background-image: url(../img/review@1x.jpg);
+    background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: left;
   }
   .reviews__arrow {
     width: 90px;
     border: none;
+  }
+}
+
+@media @retina-tablet {
+  .reviews--bg {
+    background-image: url("../img/review@2x.jpg");
   }
 }
 
@@ -138,7 +157,6 @@
     font-size: 17px;
   }
   .reviews--bg {
-    background-image: url(../img/review@1x.jpg);
     background-repeat: no-repeat;
     background-position: 100px 0;
   }
